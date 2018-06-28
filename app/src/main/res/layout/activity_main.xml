@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m: "
+        android:textSize="80sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toLeftOf="@id/minuteCountTextView"
+        app:layout_constraintTop_toTopOf="@id/minuteCountTextView"
+        />
+
+
+    <TextView
+        android:id="@+id/minuteCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/hourCountTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="h: "
+        android:textSize="80sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toLeftOf="@id/hourCountTextView"
+        app:layout_constraintTop_toTopOf="@id/hourCountTextView"
+        />
+
+    <TextView
+        android:id="@+id/hourCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/eventButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/eventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="event"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
+</layout>
